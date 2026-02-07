@@ -42,16 +42,13 @@ https://typicode.github.io/husky
 
 Support this project by becoming a sponsor [here](https://github.com/sponsors/typicode) 💖
 
-### Special Sponsor
+### GitHub
 
 <p align="center">
-  <a href="https://app.tea.xyz/sign-up?r=8L2HWfJB6hs">
-    <img src="https://github.com/typicode/husky/assets/5502029/1b95c571-0157-48bc-a147-0d8d2fbc1d8a" /><br/>
-    Get rewards for your open-source contributions
+  <a href="http://git-tower.com/?utm_source=husky&utm_medium=referral">
+    <img width="115" height="115" alt="tower-dock-icon-light" src="https://github.com/user-attachments/assets/b6b4ab20-beff-4e5c-9845-bb9d60057196" />
   </a>
 </p>
-
-### GitHub
 
 <p align="center">
   <a href="../docs/sponsorkit/sponsors.svg">
