@@ -7,7 +7,7 @@
 Husky improves your commits and more 🐶 _woof!_
 
 > [!NOTE]
-> 🌬️ Using React? I've just released a new and innovative styling solution for components [MistCSS](https://github.com/typicode/mistcss).
+> Using React? See [MistCSS](https://github.com/typicode/mistcss) typed CSS components.
 
 ## Features
 
