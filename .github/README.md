@@ -47,6 +47,7 @@ Support this project by becoming a sponsor [here](https://github.com/sponsors/ty
 <p align="center">
   <a href="http://git-tower.com/?utm_source=husky&utm_medium=referral">
     <img width="115" height="115" alt="tower-dock-icon-light" src="https://github.com/user-attachments/assets/b6b4ab20-beff-4e5c-9845-bb9d60057196" />
+    <br/>Git Tower
   </a>
 </p>
 
