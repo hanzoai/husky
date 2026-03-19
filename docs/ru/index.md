@@ -31,16 +31,19 @@ Husky улучшает ваши коммиты и многое другое 🐶
 
 Поддержите этот проект, став спонсором [здесь](https://github.com/sponsors/typicode) 💖
 
-### Специальный спонсор
+### GitHub
 
 <p align="center">
-  <a href="https://app.tea.xyz/sign-up?r=8L2HWfJB6hs">
-    <img src="https://github.com/typicode/husky/assets/5502029/1b95c571-0157-48bc-a147-0d8d2fbc1d8a" /><br/>
-    Получите награды за свой вклад в открытый исходный код
+  <a href="http://git-tower.com/?utm_source=husky&utm_medium=referral">
+    <img height="100" style="height: 100px; width: auto; max-width: none;" alt="Git Tower" src="https://camo.githubusercontent.com/4b4d0ae4ec27fe8591b575c86fe21c562f34926893272dccc05fbf0447d38694/68747470733a2f2f6a736f6e706c616365686f6c6465722e74797069636f64652e636f6d2f746f7765722d69636f6e2d616e642d6c6f676f2d31343030783236302e706e67" />
   </a>
 </p>
 
-### GitHub
+<p align="center">
+  <a href="https://serpapi.com/?utm_source=typicode">
+    <img height="100" style="height: 100px; width: auto; max-width: none;" src="https://github.com/user-attachments/assets/52b3039d-1e4c-4c68-951c-93f0f1e73611" alt="SerpApi" />
+  </a>
+</p>
 
 <p align="center">
   <a href="../sponsorkit/sponsors.svg">
