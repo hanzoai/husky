@@ -17,6 +17,16 @@
 # its own makes those assertions read the machine instead of the package. Test
 # 9 fails that way on any box with global hooks configured. The per-repo config
 # the suite sets up itself is untouched.
+#
+# time(1) is provisioned because the suite runs under dash. test/11_time.sh
+# calls `time git commit`, and `time` is a shell KEYWORD in bash but not in
+# dash, which is what /bin/sh is on this image — so with no /usr/bin/time
+# present the script dies at exit 127 and takes test 12 with it. Measured: the
+# first run reached test 11 with ten suites green and lost the last two to a
+# missing 8 KB binary. Same guarded provisioning the reusable already does for
+# jq, yq and gcc; a no-op once the runner image carries it.
 test:
   - name: test
-    run: GIT_CONFIG_GLOBAL=/dev/null sh test.sh
+    run: |
+      [ -x /usr/bin/time ] || { sudo apt-get update -qq && sudo apt-get install -y -qq time; }
+      GIT_CONFIG_GLOBAL=/dev/null sh test.sh
