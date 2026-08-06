@@ -1,0 +1,22 @@
+# Canonical CI/CD config for hanzoai/husky — read by the hanzoai/ci reusable
+# workflow (.hanzo/workflows/cicd.yml) and by platform.hanzo.ai.
+#
+# LIBRARY: native git hooks for npm projects. No image, no deploy — it ships
+# from a tag. package.json declares no scripts at all; test.sh IS the suite.
+#
+# And it is a good one, which is why it is the gate. test.sh packs the package
+# with `npm pack` and then installs THAT TARBALL into twelve throwaway git
+# repos, asserting the real behaviour each time: core.hooksPath is set, a
+# failing pre-commit blocks the commit, install from a subdirectory works,
+# a non-git directory is tolerated, HUSKY=0 skips, `set -u` scripts survive,
+# `husky init` does what it says. Nothing here is mocked — it packs, installs
+# and commits — so it fails on exactly what a user would hit.
+#
+# GIT_CONFIG_GLOBAL=/dev/null because the suite asserts on `git config
+# core.hooksPath`, and a runner (or a developer) that has a global hooksPath of
+# its own makes those assertions read the machine instead of the package. Test
+# 9 fails that way on any box with global hooks configured. The per-repo config
+# the suite sets up itself is untouched.
+test:
+  - name: test
+    run: GIT_CONFIG_GLOBAL=/dev/null sh test.sh
